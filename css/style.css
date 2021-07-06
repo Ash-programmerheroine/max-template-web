@@ -1,0 +1,170 @@
+/* ====
+color
+
+1.body color-#edeff1
+
+
+===== */
+
+
+/* =========
+Google fonts
+============= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* =========
+Global Css
+============= */
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #edeff1;
+    color:#5d6981;
+}
+a{text-decoration: none;}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.btn-link{    color: #fff;
+    background: #ff2d55;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 34px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 100px auto 150px;
+    display: block;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{text-align: center;}
+.mt-200{
+    margin-top: 200px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+
+/* =========
+Header section Css
+============= */
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl
+{
+    padding: 0;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color:#5d6981;
+    border:1px solid #5d6981;
+    background: #fff;
+    border-radius: 42px;
+    padding: 12px 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:#5d6981;
+    padding: 12px 20px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color:#55ACEE;
+}
+header nav li .fa {
+    font-size: 20px;
+    text-align: center;
+    margin: 6px 6px;
+}
+header nav li .fa:hover {
+    opacity: 0.7;
+}
+
+header nav li .fa-facebook {
+    border: 1px solid #3B5998;
+    border-radius: 50%;
+    padding: 6px 12px;
+    color:#3B5998 ;
+}
+
+header nav li .fa-twitter {
+    border: 1px solid #55ACEE;
+    border-radius: 50%;
+    padding: 6px 8px;
+    color: #55ACEE;
+} 
+/* =========
+Top section Css
+============= */
+.top-sec
+{
+    padding: 200px 0 0;
+}
+.top-sec h1{
+    color: #0149a1;
+    font-size: 55px;
+    font-weight: 700;
+}
+.top-sec h5{
+    font-size: 28px;
+    font-weight: 300;
+}
+ 
+.img-top{
+    position: relative;
+}
+.img-bulb{
+    margin-left: 444px;
+}
+.mack-book{
+    position: absolute;
+    top: -49px;
+    left: 122px;
+}
+/* ===================
+services section Css
+======================= */
+.services{padding:0 0 200px;}
+.services .mt-200 img{
+    display: block;
+    margin:0 auto;
+}
+.services h4{
+    margin: 0;
+    padding: 40px 0 0;
+}
+.services p{
+    color:#9da8b6;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ===================
+Creativity section Css
+======================= */
+.creativity{
+    padding:175px 0 75px;
+    background: url(../images/creativity-bg.png) no-repeat center top ;
+    background-size: cover;
+}
+.creativity .btn-link{
+    background:#0149a1;
+    margin: 82px auto;
+    box-shadow: 20px 20px 20px 20px rgba(255, 255, 255, 0.9);
+}
+/* =================
+How we work section
+=================== */
+.how-we-work{
+    background:#0149a1;
+    padding:160px 0;
+}
+.how-we-work h1 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+}
+.how-we-work p{
+    color:#fff;
+}
+.how-we-work .btn-link{
+    background: #fff;
+    color: #0149a1;
+    margin: 55px auto;
+}
