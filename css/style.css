@@ -24,6 +24,7 @@ a{text-decoration: none;}
 ul{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 .btn-link{    color: #fff;
     background: #ff2d55;
@@ -36,6 +37,9 @@ ul{
     display: block;
     text-decoration: none;
 }
+.btn-link:hover{
+    font-size: 18px;
+}
 h1, h2, h3, h4, h5, h6{text-align: center;}
 .mt-200{
     margin-top: 200px;
@@ -47,6 +51,7 @@ h1, h2, h3, h4, h5, h6{text-align: center;}
 /* =========
 Header section Css
 ============= */
+.navbar{padding: 20px 0;}
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl
 {
     padding: 0;
@@ -93,7 +98,7 @@ Top section Css
 ============= */
 .top-sec
 {
-    padding: 200px 0 0;
+    padding: 150px 0 0;
 }
 .top-sec h1{
     color: #0149a1;
@@ -119,7 +124,7 @@ Top section Css
 /* ===================
 services section Css
 ======================= */
-.services{padding:0 0 200px;}
+.services{padding:0 0 150px;}
 .services .mt-200 img{
     display: block;
     margin:0 auto;
@@ -153,7 +158,8 @@ How we work section
 =================== */
 .how-we-work{
     background:#0149a1;
-    padding:160px 0;
+    padding: 120px 0 100px;
+    border-top: 3px solid #fff;
 }
 .how-we-work h1 {
     color: #fff;
@@ -161,10 +167,148 @@ How we work section
     font-weight: 700;
 }
 .how-we-work p{
-    color:#fff;
+    color: #fff;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 500;
 }
 .how-we-work .btn-link{
     background: #fff;
     color: #0149a1;
-    margin: 55px auto;
+    margin: 75px auto 0;
+}
+/* ==========
+Carousel section
+============ */
+.carousel-slider{
+    padding: 100px 0;
+    background:#fff;
+}
+.carousel-slider .owl-carousel .owl-item img{
+    width:160px;
+    height:auto;
+    display:block;
+    margin:0 auto;
+
+}
+.carousel-slider p{
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    padding: 40px 361px;
+    line-height: 30px;
+    margin: 0;
+    color: #7c8ca0;
+}
+.carousel-slider .work-place{
+    color: #7c8ca0;
+    font-size: 16px;
+    font-weight: 300;
+    display:block;
+    text-align: center;
+}
+.carousel-slider a:not([href]):not([class]), a:not([href]):not([class]):hover{
+    text-decoration:underline;
+}
+.carousel-slider .owl-prev{
+    top: 40%;
+    left: 8%;
+    font-size: 50px !important;
+    position: absolute;
+    color: #7c8ca0 !important;
+    border:3px solid #edeff1 !important;
+    border-radius: 50%;
+}
+.carousel-slider .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    padding: 0px 25px !important;
+    border-radius: 50%;
+}
+.carousel-slider .owl-next{
+    top: 40%;
+    right: 8%;
+    font-size: 50px !important;
+    position: absolute;
+    color: #7c8ca0 !important;
+    border:3px solid #edeff1 !important;
+    border-radius: 50%;
+}
+.carousel-slider .owl-theme .owl-nav [class*=owl-]:hover {
+    background:transparent;
+    color:#0149a1 !important;
+    text-decoration: none;
+}
+.carousel-slider .owl-dots{  padding: 75px 0 0;}
+.carousel-slider .owl-dots .owl-dot{
+    padding: 0 2px !important;
+    margin: 1px 2px;
+    border: 1px solid #e3e7eb;
+}
+.owl-theme .owl-dots .owl-dot span {
+     margin: 2px 1px;
+    
+}
+
+/* ==========
+Team section
+============ */
+.team-sec{
+    padding: 100px 0;
+}
+.team-sec  h1 {
+    color: #0149a1;
+    font-size: 55px;
+    font-weight: 700;
+}
+.team-sec  h5 {
+    font-size: 28px;
+    font-weight: 300;
+}
+.team-sec img{
+    display: block;
+    margin:0 auto;
+}
+.team-sec h4 {
+    margin: 0;
+    padding: 40px 0 0;
+}
+.team-sec p {
+    color: #9da8b6;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+.team-sec .btn-link{margin: 75px auto 0;}
+/* ==========
+Map section
+============ */
+.map-sec{
+    background: url(../images/map-bg.png) no-repeat center top;
+    background-size: cover;
+    padding:300px 0;
+}
+/* ==========
+Footer section
+============ */
+footer{
+    background:#0149a1;
+    padding: 100px 0 120px;
+}
+footer ul li{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+}
+footer p{
+    color:#bfd1e7;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 150px 243px 0px;
+    text-align: center;
+    
+}
+footer span{
+    color:#fff;
+    font-size: 18px;
+    font-weight:700;
 }
