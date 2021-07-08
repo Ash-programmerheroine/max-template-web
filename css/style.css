@@ -1,8 +1,25 @@
+/* ====author====
+
+Name: Ashrafi khanam
+Email: ashrafikhanam.18@gmail.com
+Phone: 017xxxxxxxx
+Website:Pax-template-web
+
+*/
+
 /* ====
 color
+=======
 
-1.body color-#edeff1
-
+1.body color--#edeff1
+2.text- grey color--#5d6981
+3.btn-color---#ff2d55
+4.hover-color-#55ACEE
+5.white-------#fff
+6.fb color---#3B5998 
+7.twitter color--#55ACEE
+8.deep blue------#0149a1
+9.another text grey color--#9da8b6
 
 ===== */
 
@@ -39,11 +56,10 @@ ul{
 }
 .btn-link:hover{
     font-size: 18px;
+    opacity: .8;
 }
 h1, h2, h3, h4, h5, h6{text-align: center;}
-.mt-200{
-    margin-top: 200px;
-}
+
 .mt-100{
     margin-top: 100px;
 }
@@ -51,6 +67,9 @@ h1, h2, h3, h4, h5, h6{text-align: center;}
 /* =========
 Header section Css
 ============= */
+header{
+    background:#fff;
+}
 .navbar{padding: 20px 0;}
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl
 {
@@ -93,12 +112,14 @@ header nav li .fa-twitter {
     padding: 6px 8px;
     color: #55ACEE;
 } 
+
 /* =========
 Top section Css
 ============= */
 .top-sec
-{
-    padding: 150px 0 0;
+{   border-top:2px solid #e4e6ea ;
+    padding: 150px 0 75px;
+    background-image: linear-gradient(180deg, #fff, #e2e4e8);
 }
 .top-sec h1{
     color: #0149a1;
@@ -109,23 +130,28 @@ Top section Css
     font-size: 28px;
     font-weight: 300;
 }
- 
-.img-top{
-    position: relative;
+.img-left{
+    background:url(../images/chat-box-bg.png) no-repeat;
+    background-position: left;
 }
-.img-bulb{
-    margin-left: 444px;
+ 
+.img-right{
+    background:url(../images/bulb-bg.png) no-repeat;
+    background-position: right;
 }
 .mack-book{
-    position: absolute;
-    top: -49px;
-    left: 122px;
+    display: block;
+    margin: 0 auto;
 }
+
 /* ===================
 services section Css
 ======================= */
-.services{padding:0 0 150px;}
-.services .mt-200 img{
+.services{
+    background-image: linear-gradient(#fff, #edeff1);
+    padding:0 0 150px;
+}
+.services .mt-100 img{
     display: block;
     margin:0 auto;
 }
@@ -153,6 +179,7 @@ Creativity section Css
     margin: 82px auto;
     box-shadow: 20px 20px 20px 20px rgba(255, 255, 255, 0.9);
 }
+
 /* =================
 How we work section
 =================== */
@@ -177,6 +204,7 @@ How we work section
     color: #0149a1;
     margin: 75px auto 0;
 }
+
 /* ==========
 Carousel section
 ============ */
@@ -277,8 +305,11 @@ Team section
     margin: 0;
     padding: 20px 0;
     text-align: center;
+    font-size: 16px;
+    font-weight: 300;
 }
 .team-sec .btn-link{margin: 75px auto 0;}
+
 /* ==========
 Map section
 ============ */
@@ -287,6 +318,7 @@ Map section
     background-size: cover;
     padding:300px 0;
 }
+
 /* ==========
 Footer section
 ============ */
@@ -311,4 +343,60 @@ footer span{
     color:#fff;
     font-size: 18px;
     font-weight:700;
+}
+
+/* =======================
+Media Query css for mobile
+========================== */
+@media (min-width:320px) and (max-width:576px){
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {text-align: center;}
+    .navbar-light .navbar-nav .nav-link {text-align: center;}
+    header li{text-align: center;}
+    .mt-100 { margin-top: 70px;}
+    .top-sec {padding: 100px 0 55px;}
+    .top-sec  .btn-link{margin: 75px auto;}
+    .mack-book{width: 72%;}
+    .img-left, .img-right{background-size: 35%;}
+    .services {padding: 0 0 100px;}
+    .carousel-slider p {font-size: 14px;line-height: 24px; padding: 30px 100px;}
+    .carousel-slider .work-place {font-size: 12px;}
+    .carousel-slider .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+         padding: 0px 20px !important; border-radius: 63%;
+    }
+    .carousel-slider .owl-prev {top: 44%;left: 3%;font-size: 36px !important;border: 2px solid #edeff1 !important;}
+    .carousel-slider .owl-next { top: 44%;right: 3%; font-size: 36px !important; border: 2px solid #edeff1 !important;}
+    .how-we-work p{padding: 22px 0; text-align: center;}
+    .map-sec{padding: 250px 0;}
+    footer {padding: 80px 0 55px; } 
+    footer ul{padding-bottom: 45px;}  
+    footer ul li{text-align: center;} 
+    footer p { padding: 50px 0;}
+}
+
+/* =======================
+Media Query css for tablet
+========================== */
+@media (min-width:576px) and (max-width:768px){
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {text-align: center;}
+    .navbar-light .navbar-nav .nav-link {text-align: center;}
+    header li{text-align: center;}
+    .mt-100 { margin-top: 70px;}
+    .top-sec {padding: 100px 0 55px;}
+    .top-sec  .btn-link{margin: 75px auto;}
+    .mack-book{width: 72%;}
+    .img-left, .img-right{background-size: 35%;}
+    .services {padding: 0 0 100px;}
+    .carousel-slider p { font-size: 20px; line-height: 35px; padding: 30px 102px;}
+    .carousel-slider .work-place {font-size: 12px;}
+    .carousel-slider .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+         padding: 0px 20px !important; border-radius: 63%;
+    }
+    .carousel-slider .owl-prev {top: 44%;left: 3%;font-size: 36px !important;border: 2px solid #edeff1 !important;}
+    .carousel-slider .owl-next { top: 44%;right: 3%; font-size: 36px !important; border: 2px solid #edeff1 !important;}
+    .how-we-work p{padding: 22px 0; text-align: center;}
+    .map-sec{padding: 250px 0;}
+    footer {padding: 80px 0 55px; } 
+    footer ul{padding-bottom: 45px;}  
+    footer ul li{text-align: center;} 
+    footer p { padding: 50px 0;}
 }
