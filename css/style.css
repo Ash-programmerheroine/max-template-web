@@ -1,11 +1,10 @@
 /* ====author====
-
 Name: Ashrafi khanam
 Email: ashrafikhanam.18@gmail.com
 Phone: 017xxxxxxxx
 Website:Pax-template-web
 
-*/
+========================*/
 
 /* ====
 color
@@ -53,11 +52,14 @@ ul{
     margin: 100px auto 150px;
     display: block;
     text-decoration: none;
+    text-align: center;
 }
 .btn-link:hover{
     font-size: 18px;
     opacity: .8;
 }
+.button-overflow {  height: 307px;
+    overflow: hidden;}
 h1, h2, h3, h4, h5, h6{text-align: center;}
 
 .mt-100{
@@ -130,6 +132,11 @@ Top section Css
     font-size: 28px;
     font-weight: 300;
 }
+.top-sec .btn-link{    
+    
+    margin: 130px 540px;
+}
+
 .img-left{
     background:url(../images/chat-box-bg.png) no-repeat;
     background-position: left;
@@ -176,7 +183,7 @@ Creativity section Css
 }
 .creativity .btn-link{
     background:#0149a1;
-    margin: 82px auto;
+    margin: 122px 540px;
     box-shadow: 20px 20px 20px 20px rgba(255, 255, 255, 0.9);
 }
 
@@ -185,7 +192,7 @@ How we work section
 =================== */
 .how-we-work{
     background:#0149a1;
-    padding: 120px 0 100px;
+    padding: 120px 0 0px;
     border-top: 3px solid #fff;
 }
 .how-we-work h1 {
@@ -202,7 +209,7 @@ How we work section
 .how-we-work .btn-link{
     background: #fff;
     color: #0149a1;
-    margin: 75px auto 0;
+    margin: 75px 540px 75px;
 }
 
 /* ==========
@@ -274,15 +281,15 @@ Carousel section
 }
 .owl-theme .owl-dots .owl-dot span {
      margin: 2px 1px;
-    
+    background: #fff;
 }
+
 
 /* ==========
 Team section
 ============ */
-.team-sec{
-    padding: 100px 0;
-}
+.team-sec {
+    padding: 75px 0 0}
 .team-sec  h1 {
     color: #0149a1;
     font-size: 55px;
@@ -308,16 +315,9 @@ Team section
     font-size: 16px;
     font-weight: 300;
 }
-.team-sec .btn-link{margin: 75px auto 0;}
+.team-sec .btn-link{margin: 100px 540px;}
 
-/* ==========
-Map section
-============ */
-.map-sec{
-    background: url(../images/map-bg.png) no-repeat center top;
-    background-size: cover;
-    padding:300px 0;
-}
+
 
 /* ==========
 Footer section
@@ -353,8 +353,12 @@ Media Query css for mobile
     .navbar-light .navbar-nav .nav-link {text-align: center;}
     header li{text-align: center;}
     .mt-100 { margin-top: 70px;}
+    .button-overflow { height: 200px;}
     .top-sec {padding: 100px 0 55px;}
-    .top-sec  .btn-link{margin: 75px auto;}
+    .top-sec .btn-link{ margin: 13% 24%;}
+    .creativity .btn-link{ margin: 13% 24%;}
+    .how-we-work .btn-link{ margin: 13% 24%;}
+    .team-sec .btn-link{ margin: 13% 24%;}
     .mack-book{width: 72%;}
     .img-left, .img-right{background-size: 35%;}
     .services {padding: 0 0 100px;}
@@ -366,7 +370,7 @@ Media Query css for mobile
     .carousel-slider .owl-prev {top: 44%;left: 3%;font-size: 36px !important;border: 2px solid #edeff1 !important;}
     .carousel-slider .owl-next { top: 44%;right: 3%; font-size: 36px !important; border: 2px solid #edeff1 !important;}
     .how-we-work p{padding: 22px 0; text-align: center;}
-    .map-sec{padding: 250px 0;}
+    
     footer {padding: 80px 0 55px; } 
     footer ul{padding-bottom: 45px;}  
     footer ul li{text-align: center;} 
@@ -382,7 +386,12 @@ Media Query css for tablet
     header li{text-align: center;}
     .mt-100 { margin-top: 70px;}
     .top-sec {padding: 100px 0 55px;}
-    .top-sec  .btn-link{margin: 75px auto;}
+    .button-overflow {height: 200px;}
+    .top-sec {padding: 100px 0 55px;}
+    .top-sec .btn-link{ margin: 66px 127px;}
+    .creativity .btn-link{ margin: 66px 127px;}
+    .how-we-work .btn-link{ margin: 66px 127px;}
+    .team-sec .btn-link{ margin: 66px 127px;}
     .mack-book{width: 72%;}
     .img-left, .img-right{background-size: 35%;}
     .services {padding: 0 0 100px;}
@@ -394,7 +403,7 @@ Media Query css for tablet
     .carousel-slider .owl-prev {top: 44%;left: 3%;font-size: 36px !important;border: 2px solid #edeff1 !important;}
     .carousel-slider .owl-next { top: 44%;right: 3%; font-size: 36px !important; border: 2px solid #edeff1 !important;}
     .how-we-work p{padding: 22px 0; text-align: center;}
-    .map-sec{padding: 250px 0;}
+    
     footer {padding: 80px 0 55px; } 
     footer ul{padding-bottom: 45px;}  
     footer ul li{text-align: center;} 
